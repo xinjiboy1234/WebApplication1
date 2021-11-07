@@ -18,9 +18,10 @@
     <script src="Scripts/jquery-3.4.1.min.js"></script>
 
     <script type="text/javascript">
-        localStorage.setItem("token", "123");
-        $("#token").val(localStorage.getItem("token"));
-        //$("#btn").click();
+        //localStorage.setItem("token", "123");
+        //$("#token").val(localStorage.getItem("token"));
+        ////$("#btn").click();
+        //window.location.href = "http://localhost:8080/account/signin";
 
     </script>
 </body>

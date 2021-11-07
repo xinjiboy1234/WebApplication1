@@ -13,10 +13,10 @@ namespace WebApplication3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var key = token.Text;
-            var urlPrefix = $"http://{Context.Request.Url.Authority}";
-            var returnUrl = $"{urlPrefix}{Context.Request.QueryString["returnUrl"]}";
-            Context.Response.Redirect($"http://localhost:7000/Home/AuthValidate?returnUrl={returnUrl}&id={key}&urlPrefix={urlPrefix}");
+            //var key = token.Text;
+            //var urlPrefix = $"http://{Context.Request.Url.Authority}";
+            //var returnUrl = $"{urlPrefix}{Context.Request.QueryString["returnUrl"]}";
+            //Context.Response.Redirect($"http://localhost:7000/Home/AuthValidate?returnUrl={returnUrl}&id={key}&urlPrefix={urlPrefix}");
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)
