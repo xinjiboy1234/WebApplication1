@@ -55,7 +55,7 @@ namespace WebApplication3.Filter
                     if (tokenModel.Code != 100000)
                     {
                         FormsAuthentication.SignOut();
-                        //response.Redirect("Login");
+                        response.Redirect("/");
                     }
                 }
             }
