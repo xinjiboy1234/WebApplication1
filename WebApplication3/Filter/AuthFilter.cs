@@ -52,7 +52,7 @@ namespace WebApplication3.Filter
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("f47b558d-7654-458c-99f2-13b190ef0199"))
                 };
                 var claimsPrincipal = new JwtSecurityTokenHandler().ValidateToken(token, validateParameter, out var validatedToken);//validatedToken:解密后的对象
-                var jwtPayload = ((JwtSecurityToken)validatedToken).Payload.SerializeToJson(); //获取payload中的数据 
+                //var jwtPayload = ((JwtSecurityToken)validatedToken).Payload.SerializeToJson(); //获取payload中的数据 
                 var account = claimsPrincipal.Claims.FirstOrDefault(x => x.Type == "account")?.Value;
 
                 // 根据 account 查询用户ID和用户名，暂未实现
